@@ -1,0 +1,101 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf4; /* Creamy background */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 1px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Main Grid */
+  .assignments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    flex: 1;
+  }
+  
+  /* Cards */
+  .card {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 160, 133, 0.15);
+    transition: top 0.3s ease;
+    z-index: 0;
+  }
+  
+  .card:hover::before {
+    top: 0;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+  
+  .card span {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f5e9dc;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  #name{
+    font-size: 30px;
+    /* color: aliceblu; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }

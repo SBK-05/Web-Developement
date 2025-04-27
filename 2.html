@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Static Site</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { background: #333; color: white; padding: 10px 0; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    section { padding: 40px 20px; text-align: center; }
+    .features, .testimonials { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .card { background: #f5f5f5; padding: 20px; border-radius: 8px; width: 250px; }
+    form { max-width: 400px; margin: auto; }
+    input, textarea, button { width: 100%; margin-bottom: 10px; padding: 10px; }
+    button { background: #007BFF; color: white; border: none; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>StaticSite</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" style="background: linear-gradient(to right, #007BFF, #333); color: white;">
+  <h2>Welcome to Our Beautiful Website</h2>
+  <p>We create stunning web experiences that captivate your audience and grow your business.</p>
+  <a href="#contact" style="display: inline-block; padding: 10px 20px; background: red; color: white; text-decoration: none; margin-top: 10px;">Get Started</a>
+</section>
+
+<section id="features">
+  <h2>Our Amazing Features</h2>
+  <div class="features">
+    <div class="card">
+      <h3>⚡ Lightning Fast</h3>
+      <p>Website loads in milliseconds, keeping visitors engaged.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Secure & Reliable</h3>
+      <p>Enterprise-grade security protects your data.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Beautiful Design</h3>
+      <p>Stunning templates and customization options.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" style="background: #eee;">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonials">
+    <div class="card">
+      <p>"Transformed our business. Conversion rates doubled!"</p>
+      <h4>John Doe</h4>
+    </div>
+    <div class="card">
+      <p>"Professional team. Delivered on time and budget."</p>
+      <h4>Alice Smith</h4>
+    </div>
+    <div class="card">
+      <p>"Best service and attention to detail."</p>
+      <h4>Robert Johnson</h4>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 StaticSite. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

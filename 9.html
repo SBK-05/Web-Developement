@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration</title>
+  <style>
+    body {
+      background-color: skyblue;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 50px;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Employee Registration Form</h1>
+
+  <div class="container">
+    <form action="/submit" method="post">
+
+      <div class="form-group">
+        <label for="empName">Full Name:</label>
+        <input type="text" id="empName" name="empName" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="empEmail">Email Address:</label>
+        <input type="email" id="empEmail" name="empEmail" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="empPhone">Phone Number:</label>
+        <input type="tel" id="empPhone" name="empPhone" required placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="empDOB">Date of Birth:</label>
+        <input type="date" id="empDOB" name="empDOB" required>
+      </div>
+
+      <div class="form-group">
+        <label for="empDept">Department:</label>
+        <select id="empDept" name="empDept" required>
+          <option value="HR">HR</option>
+          <option value="IT">IT</option>
+          <option value="Finance">Finance</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="empGender">Gender:</label>
+        <input type="radio" id="male" name="empGender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="empGender" value="Female" required>
+        <label for="female">Female</label>
+      </div>
+
+      <div class="form-group">
+        <label for="empSkills">Skills:</label>
+        <input type="checkbox" id="java" name="empSkills" value="Java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="python" name="empSkills" value="Python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="html" name="empSkills" value="HTML">
+        <label for="html">HTML</label>
+      </div>
+
+      <div class="form-group">
+        <label for="empMessage">Message:</label>
+        <textarea id="empMessage" name="empMessage" rows="4" placeholder="Enter a message (optional)"></textarea>
+      </div>
+
+      <button type="submit" class="button">Register</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
