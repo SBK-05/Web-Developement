@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles.css"?>
+<root>
+    <title>Sample XML with CSS</title>
+    <content>
+        <paragraph>This is a paragraph styled with external CSS.</paragraph>
+        <highlight>This text should be highlighted.</highlight>
+    </content>
+</root>
